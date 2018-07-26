@@ -23,3 +23,5 @@ git reset --<algum tipo> <numero completo do commit ou os 7 primeiros> --> resta
 	  --soft: retorna ao status com todas as modificações porém anterior ao commit
 	  --mixed: retorna ao status com as modificações mas anterior ao adicionamento de arquivos
 	  --hard: retorna ao status antes de todas as modificações
+git branch nome-do-branch --> criação de um novo branch
+git checkout nome-do-branch --> muda o branch atual
