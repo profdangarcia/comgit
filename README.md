@@ -1,5 +1,1 @@
-Meu Segundo sistema Git!
-
-Testando MASTER!
-
-Nova linha teste!
+First tests with GIT. You can just ignore.
