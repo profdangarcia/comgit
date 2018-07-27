@@ -2,30 +2,38 @@ Instalar Git
 
 //Configurações
 git --version -> verifica a versão atual
-git config --global user.name "seu nome" -> configura o nome de usuario
-git config --global user.email "seu email" -> configura email do usuario
-git config --global core.editor <nome do editor>  ->  pode ser 'sub': sublime text ... 'netbeans'...
-git config --list ->exibe as configurações atuais
+git config --global user.name "seu nome" 		  --> configura o nome de usuario
+git config --global user.email "seu email" 		  --> configura email do usuario
+git config --global core.editor <nome do editor>  -->  pode ser 'sub': sublime text ... 'netbeans'...
+git config --list 								  -->exibe as configurações atuais
 
 //Criando Repositório
-Quando dentro do diretório escolhido (no prompt): git init -> marca o diretorio como um repositorio git
+Quando dentro do diretório escolhido (no prompt): git init     --> marca o diretorio como um repositorio git
 
 //Branchs, README e Commit
   
-Criar o arquivo: readme.md na pasta do projeto --> arquivo base do projeto com explicações
-git status --> mostra arquivos que precisam ser adicionados ou commitados
-git add -A --> adiciona todos os novos arquivos ao gerenciamento git
-git add 'nome do arquivo' --> adiciona o arquivo especifico
-git commit -m 'descrição do commit' --> realiza o commit especifico
-git log --> exibe o log de commits existentes com seus respectivos numeros
+Criar o arquivo: readme.md na pasta do projeto   --> arquivo base do projeto com explicações
+git status 									     --> mostra arquivos que precisam ser adicionados ou commitados
+git add -A 										 --> adiciona todos os novos arquivos ao gerenciamento git
+git add 'nome do arquivo' 						 --> adiciona o arquivo especifico
+git commit -am 'descrição do commit' 			 --> realiza o commit especifico
+git log 										 --> exibe o log de commits existentes com seus respectivos numeros
 git branch --> exibe os branchs existentes
-git reset --<algum tipo> <numero completo do commit ou os 7 primeiros> --> restaura para versao anterior
+git reset --<algum tipo> <numero completo do commit ou os 7 primeiros> 		--> restaura para versao anterior
 	  --soft: retorna ao status com todas as modificações porém anterior ao commit
 	  --mixed: retorna ao status com as modificações mas anterior ao adicionamento de arquivos
 	  --hard: retorna ao status antes de todas as modificações
-git branch nome-do-branch --> criação de um novo branch
-git checkout nome-do-branch --> muda o branch atual
-git diff --> exibe as modificações realizadas nos arquivos
-git diff --name-only --> exibe os nomes dos arquivos alterados
-git diff <nome-do-arquivo> --> exibe as modificações apenas no arquivo escolhido
-git checkout HEAD -- <nome-do-arquivo> --> descarta as modificações no arquivo escolhido
+git branch nome-do-branch 						 --> criação de um novo branch
+git checkout nome-do-branch 					 --> muda o branch atual
+
+//Exibir modificações em arquivos
+git diff                    					 --> exibe as modificações realizadas nos arquivos
+git diff --name-only         					 --> exibe os nomes dos arquivos alterados
+git diff <nome-do-arquivo>   					 --> exibe as modificações apenas no arquivo escolhido
+git checkout HEAD -- <nome-do-arquivo>           --> descarta as modificações no arquivo escolhido
+
+//Envio para repositorio virtual
+git remote add <nome-projeto(geralmente origin)> <url-projeto>   --> adicionar local remoto
+git remote -v  											         --> visualizar ações disponiveis
+git push -u <nome-projeto(origin)> <branch>						 --> envia as modificações para a nuvem
+
