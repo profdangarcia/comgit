@@ -26,3 +26,6 @@ git reset --<algum tipo> <numero completo do commit ou os 7 primeiros> --> resta
 git branch nome-do-branch --> criação de um novo branch
 git checkout nome-do-branch --> muda o branch atual
 git diff --> exibe as modificações realizadas nos arquivos
+git diff --name-only --> exibe os nomes dos arquivos alterados
+git diff <nome-do-arquivo> --> exibe as modificações apenas no arquivo escolhido
+git checkout HEAD -- <nome-do-arquivo> --> descarta as modificações no arquivo escolhido
