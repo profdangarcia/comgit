@@ -49,5 +49,12 @@ git push origin :<nome-branch>                   --> remove o branch remoto
 git branch -D <nome-do-branch>					 --> remove o branch local
 
 //Baixar dados do repositório remoto
+git pull <nome-projeto-remoto> <nome-branch-local>     --> baixa os dados remotos e commits
 
+//Clonar um projeto online (não permite o push) (estar no diretório onde deseja clonar)
+git clone <url-do-projeto>           --> realiza o clone de um projeto remoto
 
+//Contribuir com repositórios de outras pessoas
+Botão FORK - cria uma copia de um projeto pronto como projeto proprio
+em seguida... após clonar o novo projeto, alterar, commitar e dar um PUSH
+Botão "New Pull Request" para enviar as modificações para serem aprovadas.
