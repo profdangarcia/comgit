@@ -25,3 +25,4 @@ git reset --<algum tipo> <numero completo do commit ou os 7 primeiros> --> resta
 	  --hard: retorna ao status antes de todas as modificações
 git branch nome-do-branch --> criação de um novo branch
 git checkout nome-do-branch --> muda o branch atual
+git diff --> exibe as modificações realizadas nos arquivos
