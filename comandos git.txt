@@ -37,3 +37,17 @@ git remote add <nome-projeto(geralmente origin)> <url-projeto>   --> adicionar l
 git remote -v  											         --> visualizar ações disponiveis
 git push -u <nome-projeto(origin)> <branch>						 --> envia as modificações para a nuvem
 
+//Ignorar arquivos da pasta
+criar arquivo ".gitignore" na pasta do projeto e acrescentar em seu conteúdo o nome dos arquivos
+que serao ignorados ou "*.extensão" para ignorar todos de uma mesma extensão.
+
+//Reverter estado de commit mas sem perder o commit atual
+git revert --no-edit <numero-do-commit-a-ser-revertido>  		--> desfaz as alterações referentes ao commit mas mantem o commit nos logs
+
+//Deletar Branchs Locais e Remotos
+git push origin :<nome-branch>                   --> remove o branch remoto
+git branch -D <nome-do-branch>					 --> remove o branch local
+
+//Baixar dados do repositório remoto
+
+
